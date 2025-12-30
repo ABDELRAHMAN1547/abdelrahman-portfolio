@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdelrahman Elsayed | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      padding-top: 70px; /* عشان الـ Navbar الثابت */
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    .navbar {
+      background-color: #1f1f1f !important;
+    }
+    .navbar a {
+      color: #f5f5f5 !important;
+    }
+    .card {
+      background-color: #1f1f1f;
+      color: #fff;
+      border: none;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    /* صورة البروفايل */
+    .profile-pic {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #007bff;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#cv">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero / About -->
+  <section class="container py-5" id="about">
+    <div class="row align-items-center">
+      
+      <!-- الصورة -->
+      <div class="col-md-4 text-center mb-4 mb-md-0" data-aos="zoom-in">
+        <img src="assets/me.jpg" alt="Abdelrahman Elsayed" class="profile-pic">
+      </div>
+
+      <!-- النص -->
+      <div class="col-md-8 text-center text-md-start">
+        <h1 data-aos="fade-up">👋 Hi, I’m Abdelrahman Elsayed</h1>
+        <p data-aos="fade-up" data-aos-delay="100">
+          A passionate Web Developer & Networking Enthusiast, building secure and scalable systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="container py-5" id="projects">
+    <h2 class="section-title text-center" data-aos="fade-up">Projects</h2>
+    <div class="row g-4">
+      <!-- Project 1 -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card shadow-sm h-100">
+          <img src="assets/project1.png" class="card-img-top" alt="WebSecService">
+          <div class="card-body">
+            <h5 class="card-title">WebSecService</h5>
+            <p class="card-text">Laravel app for web security training with CRUD, GPA Simulator, and MCQ Exams.</p>
+            <a href="https://github.com/username/WebSecService" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <div class="card shadow-sm h-100">
+          <img src="assets/project2.png" class="card-img-top" alt="CampusSDN">
+          <div class="card-body">
+            <h5 class="card-title">CampusSDN</h5>
+            <p class="card-text">Software-Defined Networking project with Mininet & Ryu controller + REST API.</p>
+            <a href="https://github.com/username/CampusSDN" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <div class="card shadow-sm h-100">
+          <img src="assets/project3.png" class="card-img-top" alt="Huffman Compression">
+          <div class="card-body">
+            <h5 class="card-title">File Compression Utility</h5>
+            <p class="card-text">Huffman coding-based compression tool for reducing file size efficiently.</p>
+            <a href="https://github.com/username/FileCompressionUtility" target="_blank" class="btn btn-primary">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="container py-5" id="skills">
+    <h2 class="section-title text-center" data-aos="fade-up">Skills</h2>
+    <p class="text-center" data-aos="fade-up" data-aos-delay="100">Laravel · PHP · JavaScript · Node.js · Networking · SDN · MySQL · GitHub</p>
+  </section>
+
+  <!-- CV -->
+  <section class="container text-center py-5" id="cv">
+    <h2 class="section-title" data-aos="fade-up">Download My CV</h2>
+    <p data-aos="fade-up" data-aos-delay="100">Get a copy of my resume with full details of my experience, projects, and skills.</p>
+    <a href="assets/Abdelrahman-CV.pdf" download class="btn btn-primary btn-lg mt-3" data-aos="zoom-in">
+      📄 Download CV
+    </a>
+  </section>
+
+  <!-- Contact -->
+  <section class="container text-center py-5" id="contact">
+    <h2 class="section-title" data-aos="fade-up">Contact</h2>
+    <p data-aos="fade-up" data-aos-delay="100">📧 Email: abdelrahmankool@gmail.com</p>
+    <p data-aos="fade-up" data-aos-delay="200">🔗 GitHub: <a href="https://github.com/ABDELRAHMAN1547" target="_blank">https://github.com/abdelrahman-elsayad</a></p>
+    <p data-aos="fade-up" data-aos-delay="300">💼 LinkedIn: <a href="https://www.linkedin.com/in/%D8%B9%D8%A8%D8%AF%D8%A7%D9%84%D8%B1%D8%AD%D9%85%D9%86-abdelrahman-elsayad/" target="_blank">www.linkedin.com/in/عبدالرحمن-abdelrahman-elsayad</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-3" style="background:#1f1f1f;">
+    <p class="mb-0">© 2025 Abdelrahman Elsayed. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
